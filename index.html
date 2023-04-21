@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kasama Website</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" type="text/css" href="css/mysite.css">
+        <link rel="stylesheet" href="https://use.typekit.net/enk0ejt.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   
+    </head>
+    <body style="background-color: white">
+        
+        <section class="header">
+            <img class="logo translate" src="images/KasamaLogo.png" alt="Logo" width="200px" height="200px">
+
+            <button class="headerbox">
+                <h3>Hours</h3>
+            </button>
+            
+            <button class="headerbox">
+                <h3>Menu</h3>
+            </button>
+
+            <button class="headerbox">
+                <h3>Location</h3>
+            </button>
+
+            <button class="headerbox">
+                <h3>About</h3>
+            </button>
+
+            <button class="order-box">
+                <h3 href="https://www.toasttab.com/kasama-1001-north-winchester-avenue/v3" class="order-class">ORDER NOW</h3>
+            </button>
+            
+            
+        </section>
+        <section class="hero-box">
+            <div class="white square">
+                <p class="text1">Fine-Dining Filipino Inspired Tasting</p>
+                <br><br>
+                <img class="heroimg" src="images/Hero.png" alt="Hero" width="1267" height="607">
+                <p class="center on-image"><a href="https://www.toasttab.com/kasama-1001-north-winchester-avenue/v3" class="order-box">Order Now</a></p>
+            </div>
+        </section>
+        <section class="display-grid margin-top max-width">
+            <div>
+                <h2>Rise and shine!</h2>
+                <p>Pasteries and Coffee served fresh every morning at 9:00am! Try our NEW Kasama House Coffee Blend. Our coffee beans are locally and roasted in house.</p>
+                <p><a href="https://www.instagram.com/p/Chn38o9LVaH/" class="order-box">Purchase HERE!</a></p>
+            </div>
+            <div>
+                <img class="border-radius"src="images/KasamaBlend.png" alt="Circle" width="300" height="300">
+            </div>
+        </section>
+        <section class="customers">
+                <h2 class="text">Authentic Plates. Big Flavor.</h2>
+            <div class="flex-box">
+                <div>
+                    <img src="images/Entree1.png" width="300px" height="300px">
+                    <p class="food">Philipino BBQ Platter</p>
+                </div>
+                <div>
+                    <img src="images/Entree2-2.png" width="300px" height=300px>
+                    <p class="food">Pulutan</p>
+                </div>
+                <div>
+                    <img src="images/Entree3.png" width="300px" height="300px">
+                    <p class="food">Housemade Corned Beef</p>
+                    </div>
+            </div>
+        </section>
+        
+        <section class="customers-2">
+                <h2 class="text-2">Customer Favorite Deserts:</h2>
+            <div class="flex-box">
+                <div class="scale">
+                    <img src="images/Pecan pie.png" width="300px" height="300px" alt="Pie">
+                    <p>Lemon Pecan Pie</p>
+                </div>
+                <div>
+                    <img src="images/Lavendar Coffee.png" width="300px" height="300px" alt="Coffee">
+                    <p>Honey Lavendar Latte</p>
+                </div>
+                <div>
+                    <img src="images/Crossants.png" width="300px" height="300px" alt="Cossants">
+                    <p>Crossants:
+                        <li>Apple and cheese</li>
+                        <li>Chocolate ganache</li>
+                        <li>Almond with lemon curd and pear butter</li>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="padding">
+            <div class="background-image max-width image-text">
+            <h2>Location<br>
+                1001 N. Winchester Ave.<br>
+                Chicago, Illinois 60622<br>
+                Phone:<br>
+                773-697-3790<br>
+                Email:<br>
+                 info@kasamachicago.com</h2>
+            </div>
+        </section>
+        <footer class="footer">
+            <p>Careers</p>
+            <p>Gift cards</p>
+            <p>Contact Us</p>
+            <p>Instagram</p>
+            <p>Facebook</p>
+        </footer>
+        <script src="jQuery/index.js"></script>
+        $(document).ready(function() {
+                // First jQuery effect - animate the logo on hover
+                $(".scale").hover(function() {
+                   $(this).css("transform", "scale(1.2)");
+                },
+                function() {
+                    $(this).css("transform", "scale(1)");
+                })
+            })
+            $(document).ready(function() {
+                // Second jQuery effect - fad in the cation
+                $(".translate").hover(function(){
+                    $(this).css("transform", "translateY(-50px)");
+                    $(this).css("transition", "500ms");
+                    $(this).css("cursor", "pointer");
+            },
+            function () {
+                $(this).css("transform", "translateY(0)");
+            })
+                $('.border-radius').each(function() {
+                var xPos = $(this).offset().left;
+                xPos += 200;
+                $(this).offset({'left':xPos});
+                });
+            })
+        </script>
+    </body>
+</html>
