@@ -5,7 +5,6 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         <link rel="stylesheet" type="text/css" href="css/mysite.css">
         <link rel="stylesheet" href="https://use.typekit.net/enk0ejt.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
    
     </head>
     <body style="background-color: white">
@@ -110,32 +109,5 @@
             <p>Instagram</p>
             <p>Facebook</p>
         </footer>
-        <script src="jQuery/index.js"></script>
-        $(document).ready(function() {
-                // First jQuery effect - animate the logo on hover
-                $(".scale").hover(function() {
-                   $(this).css("transform", "scale(1.2)");
-                },
-                function() {
-                    $(this).css("transform", "scale(1)");
-                })
-            })
-            $(document).ready(function() {
-                // Second jQuery effect - fad in the cation
-                $(".translate").hover(function(){
-                    $(this).css("transform", "translateY(-50px)");
-                    $(this).css("transition", "500ms");
-                    $(this).css("cursor", "pointer");
-            },
-            function () {
-                $(this).css("transform", "translateY(0)");
-            })
-                $('.border-radius').each(function() {
-                var xPos = $(this).offset().left;
-                xPos += 200;
-                $(this).offset({'left':xPos});
-                });
-            })
-        </script>
     </body>
 </html>
